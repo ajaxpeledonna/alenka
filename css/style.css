@@ -1564,7 +1564,6 @@ h6 {
 @media (max-width: 767.98px) {
   body.lock {
     width: 100%;
-    position: fixed;
     overflow: hidden;
   }
 }
@@ -1881,8 +1880,9 @@ h6 {
   .newsletter__wrapper {
     background: url("../img/RSS.svg") 6px 6px no-repeat;
     background-size: 13px;
-    max-width: 400px;
+    max-width: 100%;
     padding: 0 35px;
+    display: block;
   }
 
   .newsletter__wrapper::before {
@@ -1897,6 +1897,8 @@ h6 {
 
   .newsletter .ui-form {
     padding: 30px 0 30px;
+    max-width: 400px;
+    margin: 0 auto;
   }
 
   .newsletter .form-row-wrap {
@@ -1978,13 +1980,13 @@ h6 {
   .newsletter .form-row textarea:focus + label {
     font-size: 8px;
     top: -20px;
-    left: 35px;
+    left: 15px;
   }
 
   .newsletter .form__btn {
     font-size: 10px;
     border-radius: 2px;
-    width: 80%;
+    width: 100%;
   }
 
   .newsletter label.error {
