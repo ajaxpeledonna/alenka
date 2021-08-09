@@ -2094,7 +2094,7 @@ h6 {
   }
 
   .footer .form-news__col {
-    width: 100%;
+    max-width: 78%;
   }
 
   .footer .form-news__btn {
