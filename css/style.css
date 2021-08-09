@@ -548,6 +548,10 @@ h6 {
   background: transparent;
 }
 
+.slider .slick-dots li button {
+  display: none;
+}
+
 .slider .slick-dots li::before {
   background: #f7f7f7;
   width: 70px;
@@ -1588,6 +1592,10 @@ h6 {
 
   .header__top {
     background-color: #ffffff;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin: 0 0 30%;
   }
 
   .header__top-wrapper {
@@ -1627,6 +1635,7 @@ h6 {
     z-index: 1001;
     margin-bottom: 95px;
     width: 100%;
+    height: auto;
   }
 
   #navbar li {
@@ -1643,10 +1652,15 @@ h6 {
     width: 100%;
     z-index: 1001;
     background-color: #ffffff;
-    min-height: 92vh;
-    max-height: 100%;
     overflow-y: scroll;
-    height: auto;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   #navbar-mob.active {
@@ -1718,6 +1732,9 @@ h6 {
 
   .menu-two {
     max-height: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
   }
 
   .menu-two li {
