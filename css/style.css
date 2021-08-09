@@ -239,6 +239,7 @@ h6 {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  color: #000;
 }
 
 .header__top-text:hover {
