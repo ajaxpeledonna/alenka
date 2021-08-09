@@ -20,8 +20,7 @@ const bars = document.querySelector('.bars');
 const headerMenu = document.querySelector('#navbar-mob');
 const headerTop = $('#header-top');
 
-function adaptive_header(w)
- {
+function adaptive_header(w, h) {
 	if (w < 768) {
 		if (!userPanel.hasClass('done') && !headerTop.hasClass('done')) {
 			userPanel.addClass('done').appendTo(headerMenu);
@@ -38,9 +37,8 @@ function adaptive_header(w)
 
 function adaptive_function() {
 	var w = $(window).outerWidth();
-	//var h = $(window).outerHeight();
-	adaptive_header(w)
-;
+	var h = $(window).outerHeight();
+	adaptive_header(w, h);
 }
 
 adaptive_function();
