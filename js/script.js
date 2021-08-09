@@ -37,8 +37,7 @@ function adaptive_header(w, h) {
 
 function adaptive_function() {
 	var w = $(window).outerWidth();
-	var h = $(window).outerHeight();
-	adaptive_header(w, h);
+	adaptive_header(w);
 }
 
 adaptive_function();
